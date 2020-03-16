@@ -34,3 +34,19 @@ def plot_feature(album, feature):
 	plt.title(album.name)
 	plt.tight_layout()
 	plt.show()
+
+def plot_features(album, features):
+	"""
+	Plots multiple features (list of str). 
+	Note that it will plot on the same y-axis, so including features with different
+	ranges may not work well.
+	"""
+	for feature in features:
+		plt.plot(album.track_names, [track[feature] for track in album.track_audio_features], label=feature)
+
+	plt.xticks(rotation=60, horizontalalignment='right')
+	plt.title(album.name)
+	plt.tight_layout()
+	plt.legend()
+	plt.show()
+
