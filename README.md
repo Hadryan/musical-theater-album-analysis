@@ -26,11 +26,11 @@ I plotted audio feature values for some of my favorite musical soundtracks and d
 
 ### Dear Evan Hansen
 I started by plotting valence ("musical positiveness"):
-![](plots/deh_valence.png)
+<p align="center"><img src="plots/deh_valence.png" width="75%"></p>
 The main thing I notice is that I disagree with a lot of the valence values (For Forever is a pretty happy song outside the context of the show, Sincerely, Me should probably be much higher, and Good For You is definitely not very positive). The Spotify API doesn't go into detail about how it calculates these values; presumably it's some sort of data-driven, proprietary algorithm, but this shows the limitations of using a single calculated value to encapsulate the mood of a song. 
 
 I then tried plotting energy:
-![](plots/deh_energy.png)
+<p align="center"><img src="plots/deh_energy.png" width="75%"></p>
 I think the energy values capture the pacing of the show pretty well - the first act ebbs and flows, the climax happens around Good For You / Words Fail, and the pace slows down a lot after that with the emotional intensity of Words Fail and So Big / So Small. 
 
 Since energy worked better here, I'll mostly stick with plotting energy in this analysis, although I also included the valence plots in the folder. 
@@ -46,7 +46,7 @@ Having not actually seen the musical, I can't really evaluate how accurate this 
 Les Mis is also sung-through (I believe), and look how nice this graph is!! You can really see the oscillation of narrative pace that is common in all forms of storytelling, and you can even see how the plot kind of gradually ramps up to a peak and down after. Most of the peaks correspond to adrenaline-filled scenes on the front lines of the revolution (ABC Cafe, the barricades, the sewers) and in between we have the love ballads and soliloquys (Suddenly, A Heart Full of Love, Empty Chairs at Empty Tables). 
 
 ### Waitress
-![](plots/waitress_energy.png)
+<p align="center"><img src="plots/waitress_energy.png" width="75%"></p>
 Yet another musical I have not seen (but would love to!!). From my hours and hours of listening to the cast album, I think I can say that the show starts and ends pretty positively, which is reflected in the graph. 
 
 An interesting thing I noticed is that in between the series of fairly calm Jenna songs (It Only Takes a Taste -> A Soft Place to Land) and the frenetic, high-energy Bad Idea, we switch over to a different character's more medium-energy song (Never Ever Getting Rid of Me) as sort of a transition. Like Les Mis, Waitress seems to interleave different characters' songs in a way that allows the oscillations in pace to be more gradual. 
@@ -54,5 +54,5 @@ An interesting thing I noticed is that in between the series of fairly calm Jenn
 I'm interested in doing some lower-level analysis for Waitress in particular because the score in general is very musically interesting - for example What Baking Can do features lots of key changes / modulation (including a few DOWNWARDS key changes which are pretty uncommon as far as I know), and When He Sees Me uses very unconventional meters at times, staying on a chord for a bar or two longer than expected. 
 
 ### Rent
-![](plots/rent_energy.png)
+<p align="center"><img src="plots/rent_energy.png" width="80%"></p>
 I haven't seen Rent and I'm not super familiar with it, so again I am not in a position to evaluate, but I thought this graph was pretty interesting and funny. It's an absolute rollercoaster, which is basically what my impression of the musical is. 
